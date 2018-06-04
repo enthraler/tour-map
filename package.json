@@ -1,0 +1,25 @@
+{
+  "name": "tour-map",
+  "version": "0.0.1",
+  "description": "An interactive enthraler that shows all the events for a world tour on a map",
+  "main": "index.js",
+  "author": "Jason O'Neil",
+  "license": "MIT",
+  "scripts": {
+    "start": "cultureamp-front-end-scripts-start",
+    "build": "cultureamp-front-end-scripts-build"
+  },
+  "dependencies": {
+    "animated-scroll-to": "^1.2.1",
+    "cultureamp-front-end-scripts": "^0.1.0"
+  },
+  "enthraler": {
+    "main": "public/assets/main.bundle.js",
+    "schema": "src/schema.json"
+  },
+  "devDependencies": {
+    "haxe-loader": "^0.7.4",
+    "haxeshim": "^0.12.4",
+    "lix.pm": "^0.14.0"
+  }
+}

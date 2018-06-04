@@ -1,0 +1,16 @@
+{
+	"shows": {
+		"type": "arrayOf",
+		"subType": {
+			"type": "shape",
+			"shape": {
+				"date": "string",
+				"city": "string",
+				"region": {
+					"type": "oneOf",
+					"values": ["UK", "Canada", "USA", "Australia", "New Zealand"]
+				}
+			}
+		}
+	}
+}

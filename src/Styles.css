@@ -1,0 +1,57 @@
+html {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.TourMap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* Account for enthraler footer */
+	bottom: 18px;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.MapContainer {
+	min-height: 300px;
+	flex: 1;
+}
+
+.ShowList {
+	overflow-x: auto;
+}
+
+	.ShowList__scrollContainer {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.ShowList__padding {
+		flex: 0 0 calc(50vw - 150px);
+	}
+
+	.ShowList ul {
+		display: flex;
+		list-style: none;
+		flex-direction: row;
+		margin: 0;
+		padding: 0;
+	}
+
+	.ShowList__Show {
+		flex: 1;
+	}
+
+	.ShowList__Show button {
+		min-width: 300px;
+		max-width: 95vw;
+		height: 120px;
+		appearance: none;
+		border: 1px solid burlywood;
+		box-shadow: none;
+	}
+
+	.ShowList__Show__active button {
+		background: orange;
+	}

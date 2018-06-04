@@ -1,0 +1,99 @@
+{
+  "style": {
+    "tiles": "satellite-streets",
+    "startZoom": "1",
+    "speed": "1"
+  },
+  "stops": [
+    {
+      "date": "2018-05-09",
+      "city": "Home (Bassendean)",
+      "region": "Italy 2018",
+      "coordinates": [ 115.95262368285017, -31.90519807166872 ]
+    },
+    {
+      "date": "2018-05-09",
+      "city": "Perth Airport",
+      "region": "Italy 2018",
+      "coordinates": [ 115.97020507774783, -31.940928754581996 ]
+    },
+    {
+      "date": "2018-05-09",
+      "city": "Dubai Airport",
+      "region": "Italy 2018",
+      "coordinates": [ 55.35684870592678, 25.25097695476144 ]
+    },
+    {
+      "date": "2018-05-09",
+      "city": "Milan",
+      "region": "Italy 2018",
+      "coordinates": [ 9.191846790618087, 45.46426891439859 ]
+    },
+    {
+      "date": "2018-05-11",
+      "city": "Venice",
+      "region": "Italy 2018",
+      "coordinates": [ 12.32828790329259, 45.43308976871512 ]
+    },
+    {
+      "date": "2018-05-16",
+      "city": "Florence",
+      "region": "Italy 2018",
+      "coordinates": [ 11.255814812464678, 43.76935318005201 ]
+    },
+    {
+      "date": "2018-05-19",
+      "city": "Castle Maiano (Tuscany)",
+      "region": "Italy 2018",
+      "coordinates": [ 11.715279901165843, 43.3590698348207 ]
+    },
+    {
+      "date": "2018-05-26",
+      "city": "Rome",
+      "region": "Italy 2018",
+      "coordinates": [ 12.492251170156749, 41.89011331974814 ]
+    },
+    {
+      "date": "2018-05-28",
+      "city": "Polermo",
+      "region": "Italy 2018",
+      "coordinates": [ 13.36145145056733, 38.115696906549516 ]
+    },
+    {
+      "date": "2018-05-29",
+      "city": "Erice",
+      "region": "Italy 2018",
+      "coordinates": [ 12.587172625174475, 38.038286574571686 ]
+    },
+    {
+      "date": "2018-05-29",
+      "city": "San Veto La Capo",
+      "region": "Italy 2018",
+      "coordinates": [ 12.741127617653603, 38.175462202284336 ]
+    },
+    {
+      "date": "2018-05-29",
+      "city": "Polermo",
+      "region": "Italy 2018",
+      "coordinates": [ 13.36145145056733, 38.115696906549516 ]
+    },
+    {
+      "date": "2018-05-30",
+      "city": "Modica",
+      "region": "Italy 2018",
+      "coordinates": [ 14.760821086877684, 36.859005108257335 ]
+    },
+    {
+      "date": "2018-05-30",
+      "city": "Noto",
+      "region": "Italy 2018",
+      "coordinates": [ 15.070607292823894, 36.89091708034603 ]
+    },
+    {
+      "date": "2018-05-31",
+      "city": "Siracusa",
+      "region": "Italy 2018",
+      "coordinates": [ 15.289207134689207, 37.07520094922312 ]
+    }
+  ]
+}
