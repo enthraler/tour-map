@@ -1,6 +1,8 @@
 typedef AuthorData = {
 	style: {
 		tiles: TileStyle,
+		circleColor: String,
+		circleRadius: Int,
 		startZoom: Int,
 		speed: Int,
 	},
@@ -10,7 +12,7 @@ typedef AuthorData = {
 typedef Stop = {
 	date: String,
 	city: String,
-	region: String,
+	byline: String,
 	coordinates: Array<Float>
 }
 

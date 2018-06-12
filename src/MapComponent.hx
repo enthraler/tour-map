@@ -94,7 +94,6 @@ class MapComponent extends ReactComponentOf<AuthorData, {
 			type: "Feature",
 			properties: {
 				index: stops.indexOf(stop),
-				// icon: "marker-15"
 			},
 			geometry: {
 				type: "Point",
@@ -104,7 +103,7 @@ class MapComponent extends ReactComponentOf<AuthorData, {
 
 		map.addLayer({
 			"id": "stops",
-			"type": "symbol",
+			"type": "circle",
 			"source": {
 				"type": "geojson",
 				"data": {
@@ -112,10 +111,10 @@ class MapComponent extends ReactComponentOf<AuthorData, {
 					"features": features
 				}
 			},
-			"layout": {
-				"icon-image": "marker-15",
-				"icon-allow-overlap": true
-			}
+			"paint": {
+				"circle-radius": props.style.circleRadius,
+				"circle-color": props.style.circleColor
+			},
 		});
 
 		// Center the map on the coordinates of any clicked symbol from the 'stops' layer.
@@ -170,7 +169,12 @@ class MapComponent extends ReactComponentOf<AuthorData, {
 		}
 
 		var coordinates: Array<Float> = stop.coordinates.copy();
-		var description = '${stop.city} ${stop.region} ${stop.date} <a href="">TICKETS</a>';
+		var description = '
+			<div>
+				<strong>${stop.city}</strong>
+				<br /><em>${stop.byline}</em>
+				<br />Date: ${stop.date}
+			</div>';
 
 		if (clickEvent != null) {
 			// Ensure that if the map is zoomed out such that multiple

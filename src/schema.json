@@ -6,10 +6,7 @@
 			"shape": {
 				"date": "string",
 				"city": "string",
-				"region": {
-					"type": "oneOf",
-					"values": ["UK", "Canada", "USA", "Australia", "New Zealand"]
-				}
+				"byline": "string"
 			}
 		}
 	}

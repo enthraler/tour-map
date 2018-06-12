@@ -59,10 +59,23 @@ class StopTile extends ReactComponentOfProps<{
 	override public function render() {
 		var stop = props.stop;
 		var date = Date.fromString(stop.date);
+		var day = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][date.getDay()];
+		var month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dev'][date.getMonth()];
 		var className = props.isCurrent ? '${Styles.ShowList__Show} ${Styles.ShowList__Show__active}' : Styles.ShowList__Show;
 		return jsx('<li className=${className}>
 			<button onClick=${() -> props.onSelect(stop)}>
-				${date.toString()} ${stop.city} ${stop.region}
+				<div className=${Styles.Show__Container}>
+					<div className=${Styles.Date}>
+						<span className=${Styles.Date__day}>$day</span>
+						<span className=${Styles.Date__date}>${date.getDate()}</span>
+						<span className=${Styles.Date__month}>${month}</span>
+						<span className=${Styles.Date__year}>${date.getFullYear()}</span>
+					</div>
+					<div className=${Styles.Show__Details}>
+						<span className=${Styles.Show__City}>${stop.city}</span>
+						<span className=${Styles.Show__Byline}>${stop.byline}</span>
+					</div>
+				</div>
 			</button>
 		</li>');
 	}

@@ -19,4 +19,5 @@ const config = configMaker.generateWebpackConfig();
 config.externals = [
   "css!https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600"
 ];
+config.devServer.host = '0.0.0.0';
 module.exports = config;

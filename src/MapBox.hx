@@ -64,7 +64,7 @@ extern class Map {
 		width: Int,
 		height: Int,
 		data: EitherType<Uint8Array, Uint8ClampedArray>
-	}>, options: {
+	}>, ?options: {
 		?pixelRatio: Float,
 		?sdf: Bool
 	}): Void;

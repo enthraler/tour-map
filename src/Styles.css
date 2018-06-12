@@ -19,7 +19,9 @@ html {
 }
 
 .ShowList {
-	overflow-x: auto;
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
+	background: #3E4543;
 }
 
 	.ShowList__scrollContainer {
@@ -48,10 +50,64 @@ html {
 		max-width: 95vw;
 		height: 120px;
 		appearance: none;
-		border: 1px solid burlywood;
+		background: #3E4543;
+		border: 1px solid #383E3C;
 		box-shadow: none;
+		color: white;
+	}
+
+	.ShowList__Show button:hover {
+		background: #515856;
 	}
 
 	.ShowList__Show__active button {
-		background: orange;
+		background: #515856;
 	}
+
+	.Show__Container {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.Date {
+		width: 25%;
+		font: sans-serif;
+		text-align: center;
+		text-transform: uppercase;
+		display: flex;
+		flex-direction: column;
+		color: #1F2322;
+	}
+
+		.Date__day {
+			margin-bottom: auto;
+		}
+		.Date__date {
+			font-size: 30px;
+			font-weight: 900;
+		}
+		.Date__month {
+			display: block;
+		}
+		.Date__year {
+			margin-top: auto;
+			display: block;
+		}
+
+	.Show__Details {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+	}
+
+		.Show__City {
+			font-size: 26px;
+			margin-top: auto;
+		}
+
+		.Show__Byline {
+			opacity: 0.5;
+			font-style: italic;
+			margin-bottom: auto;
+		}
