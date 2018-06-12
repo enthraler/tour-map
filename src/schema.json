@@ -1,12 +1,37 @@
 {
-	"shows": {
+	"style": {
+		"type": "shape",
+		"shape": {
+			"tiles": {
+				"type": "oneOf",
+				"values": [
+					"basic",
+					"streets",
+					"bright",
+					"light",
+					"dark",
+					"satellite",
+					"satellite-streets"
+				]
+			},
+			"circleColor": "string",
+			"circleRadius": "number",
+			"startZoom": "integer",
+			"speed": "integer",
+		}
+	},
+	"stops": {
 		"type": "arrayOf",
 		"subType": {
 			"type": "shape",
 			"shape": {
 				"date": "string",
 				"city": "string",
-				"byline": "string"
+				"byline": "string",
+				"coordinates": {
+					"type": "arrayOf",
+					"subType": "number"
+				}
 			}
 		}
 	}

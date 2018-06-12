@@ -1,6 +1,6 @@
 {
   "name": "tour-map",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An interactive enthraler that shows all the events for a world tour on a map",
   "main": "index.js",
   "author": "Jason O'Neil",
