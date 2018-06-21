@@ -21,7 +21,7 @@ html {
 .ShowList {
 	overflow-x: scroll;
 	-webkit-overflow-scrolling: touch;
-	background: #3E4543;
+	background: #E0E0E0;
 }
 
 	.ShowList__scrollContainer {
@@ -50,24 +50,63 @@ html {
 		max-width: 95vw;
 		height: 120px;
 		appearance: none;
-		background: #3E4543;
-		border: 1px solid #383E3C;
+		background: #ffffff;
+		border: 1px solid #fbc9ce;
 		box-shadow: none;
-		color: white;
+		color: #3E4543;
+		padding: 0;
 	}
 
 	.ShowList__Show button:hover {
-		background: #515856;
+		background: #F9F9F9;
 	}
 
 	.ShowList__Show__active button {
-		background: #515856;
+		background: #F9F9F9;
 	}
 
 	.Show__Container {
 		display: flex;
 		flex-direction: row;
+		position: relative;
+		height: 95px;
+		padding-top: 10px;
+		padding-bottom: 15px;
 	}
+
+		.Show__Container::before {
+			position: absolute;
+			bottom: 11px;
+			left: 0;
+			right: 0;
+			height: 2px;
+			background: #fbc9ce;
+			content: " ";
+		}
+
+			.ShowList__Show:first-of-type .Show__Container::before {
+				left: 44px;
+			}
+
+			.ShowList__Show:last-of-type .Show__Container::before {
+				width: 44px;
+				right: auto;
+			}
+
+		.Show__Container::after {
+			position: absolute;
+			bottom: 5px;
+			left: 44px;
+			height: 14px;
+			width: 14px;
+			border-radius: 7px;
+			background: #fbc9ce;
+			content: " ";
+		}
+
+			.ShowList__Show__active .Show__Container::after {
+				background: #A83541;
+			}
 
 	.Date {
 		width: 25%;
@@ -77,21 +116,39 @@ html {
 		display: flex;
 		flex-direction: column;
 		color: #1F2322;
+		background: #ffffff;
+		border: #FBC9CE 1px solid;
+		border-radius: 12px;
+		overflow: hidden;
+		margin: 0 15px 15px 15px;
 	}
 
 		.Date__day {
 			margin-bottom: auto;
+			padding-top: 2px;
+			background: #FBC9CE;
+			font-size: 14px;
+			line-height: 20px;
 		}
+
+			.ShowList__Show__active .Date__day {
+				background: #A83541;
+				color: #ffffff;
+			}
+
 		.Date__date {
 			font-size: 30px;
 			font-weight: 900;
+			padding-top: 3px;
 		}
 		.Date__month {
 			display: block;
+			padding-bottom: 2px;
 		}
 		.Date__year {
 			margin-top: auto;
 			display: block;
+			display: none;
 		}
 
 	.Show__Details {
@@ -110,4 +167,5 @@ html {
 			opacity: 0.5;
 			font-style: italic;
 			margin-bottom: auto;
+			color: #646464;
 		}
